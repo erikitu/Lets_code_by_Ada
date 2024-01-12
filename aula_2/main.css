@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+  }
+  h1 {
+    text-align: center;
+  }
+  .subTitle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+  }
+  .subTitle img{
+    width: 100px;
+    border-radius: 50%;
+    padding: 5px;
+  }
+  
+  .content{
+    margin: 0 auto;
+    text-indent: 30px;
+    width: 50%;
+    padding: 0 20px;
+    text-align: justify;
+    justify-content: center;
+  }
+  
+  footer > p{
+    text-align: center;
+  }
+  
+  footer > p > a {
+    text-decoration: none;
+  }
