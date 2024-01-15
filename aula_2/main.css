@@ -1,39 +1,95 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-    background-color: #000000;
-    color: #ffffff;
-  }
-  h1 {
-    text-align: center;
-  }
-  .subTitle{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 5px;
-  }
-  .subTitle img{
-    width: 100px;
-    border-radius: 50%;
-    padding: 5px;
-  }
-  
-  .content{
-    margin: 0 auto;
-    text-indent: 30px;
-    width: 50%;
-    padding: 0 20px;
-    text-align: justify;
-    justify-content: center;
-  }
-  
-  footer > p{
-    text-align: center;
-  }
-  
-  footer > p > a {
-    text-decoration: none;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  background-color: #fff;
+  color: #000000;
+}
+h1 {
+  text-align: center;
+}
+
+body {
+  margin: 2rem;
+}
+.subTitle{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+}
+.subTitle img{
+  width: 10rem;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.content{
+  margin: 0 auto;
+  width: 70%;
+  padding: 0 20px;
+  text-align: justify;
+  justify-content: center;
+}
+
+.content p {
+  text-indent: 30px;
+}
+
+.content ul {
+  margin-top: 10px;
+  list-style: none;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+  padding: 0;
+  display: flex; /* Torna o <ul> um contêiner flexível */
+  flex-wrap: wrap; /* Permite que os <li> quebrem para a próxima linha se não houver espaço suficiente */
+  justify-content: space-around;
+}
+.content ul li {
+  display: inline-block; /* Coloca os <li> lado a lado */
+  margin: 0;
+}
+
+.content ul li img{
+  width:3rem;
+}
+.content s{
+  color: #a00;
+}
+.content form {
+  margin-top: 10px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+form button {
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+footer {
+  text-align: center;
+  align-items: center;
+}
+footer ol {
+  margin-top: 10px;
+  font-weight: bold;
+}
+footer ol li {
+  font-weight: normal;
+}
+footer > p > a {
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.3s ease-in-out;
+  display: inline-block;
+}
+
+footer a:hover{
+  color: #00e;
+  transform: scale(1.1);
+}
