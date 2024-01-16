@@ -1,95 +1,55 @@
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
-  background-color: #fff;
-  color: #000000;
 }
-h1 {
+.content-wrapper {
   text-align: center;
-}
-
-body {
-  margin: 2rem;
-}
-.subTitle{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 5px;
+  background-color: #fff;
+  border-radius: 8px;
+  margin: 1rem 2rem;
+  padding: 0;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .subTitle img{
   width: 10rem;
   border-radius: 50%;
-  padding: 5px;
+  border: 2px solid #000000
 }
-
-.content{
-  margin: 0 auto;
-  width: 70%;
-  padding: 0 20px;
-  text-align: justify;
-  justify-content: center;
+.content h3 {
+  font-weight: bold;
+  margin: 0.3rem;
 }
 
 .content p {
+  margin: 0 auto;
+  text-align: center;
+  text-align: justify;
+  max-width: 80vw;
   text-indent: 30px;
 }
 
-.content ul {
-  margin-top: 10px;
-  list-style: none;
-  align-items: center;
-  text-align: center;
-  font-weight: bold;
-  padding: 0;
-  display: flex; /* Torna o <ul> um contêiner flexível */
-  flex-wrap: wrap; /* Permite que os <li> quebrem para a próxima linha se não houver espaço suficiente */
-  justify-content: space-around;
-}
-.content ul li {
-  display: inline-block; /* Coloca os <li> lado a lado */
-  margin: 0;
+.content a img{
+  max-width: 3rem;
 }
 
-.content ul li img{
-  width:3rem;
-}
-.content s{
-  color: #a00;
-}
-.content form {
-  margin-top: 10px;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-form button {
-  padding: 10px;
-  border-radius: 8px;
+.content ol {
   font-weight: bold;
-}
-footer {
-  text-align: center;
-  align-items: center;
-}
-footer ol {
-  margin-top: 10px;
-  font-weight: bold;
-}
-footer ol li {
-  font-weight: normal;
-}
-footer > p > a {
-  text-decoration: none;
-  font-weight: bold;
-  transition: transform 0.3s ease-in-out;
+  margin: 1rem;
   display: inline-block;
+  text-align: center;
 }
 
-footer a:hover{
-  color: #00e;
-  transform: scale(1.1);
+.content ol li {
+  font-weight: normal;
+  text-transform: capitalize;
+  text-align: left;
+  align-items: center;
+}
+.content ol li input {
+  margin-right: .2rem;
+}
+
+footer a {
+  text-decoration: none;
 }
