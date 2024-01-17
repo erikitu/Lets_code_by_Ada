@@ -1,30 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="form.css">
+  <title>Formulário</title>
 </head>
 <body>
-  <form>
-    <h4>Um Exemplo de Formulário abordando as explicações da aula:</h4>
-    <label for="name">Nome:</label>
-    <input type="text" id="name" name="name" required>
+  <div class="content-wrapper">
+    <h2>Formulário de Contato</h2>
+    <p>Aqui é um exemplo de formulário para contato, caso tenha dúvidas, criticas ou sugestões deixe um recado.</p>
+    <form action="#" method="post">
+      <label for="name">Nome:</label>
+      <input type="text" id="name" placeholder="Luke Skywalker" name="name" required>
 
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
+      <label for="email">Email:</label>
+      <input type="email" placeholder="exemplo@gmail.com" id="email" name="email" required>
 
-    <label for="age">Idade:</label>
-    <input type="number" id="age" name="age" min="0" required>
+      <label for="message">Mensagem:</label>
+      
+      <textarea id="message" name="message" rows="4" cols="33" placeholder="a long time ago in a galaxy far far away..." required> 
+      
+      </textarea>
 
-    <label for="mensagem">Mensagem:</label>
-    <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+    
+  </div>
 
-    <label for="attachment">Anexo:</label>
-    <input type="file" id="attachment" name="attachment">
-
-    <button type="submit">Enviar</button>
-  </form>
-  <button type="button"><a href="index.html">Voltar</a></button>
+  
 </body>
 </html>
