@@ -54,3 +54,8 @@
   box-shadow: 1px 1px 1px #999;  
   cursor: pointer;
 }
+
+a > button {
+  background-color: #00a;
+  color: #fff;
+}

@@ -28,6 +28,9 @@
   max-width: 80vw;
   text-indent: 30px;
 }
+.content p s {
+  color: #e00;
+}
 
 .content a img{
   max-width: 3rem;
@@ -70,5 +73,5 @@ footer a {
 }
 
 footer a:hover {
-  transform: scale(1.2) translateY(-8px);
+  transform: scale(1.1);
 }
